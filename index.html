@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codemz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="splash-screen">
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    <!-- Fixed Header -->
+     <div class="main-content" style="display: none;">
+    <header class="fixed top-0 left-0 right-0 bg-gray-900 p-4 shadow-lg z-20 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="https://devmenu.codemz.com" class="text-xl font-extrabold text-white tracking-wide hover:text-red-500 transition-colors duration-200">
+                devmenu
+            </a>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input id="search" type="text" placeholder="Search menu..."
+                        class="p-2 pl-10 rounded bg-gray-800 text-white w-40 sm:w-64 transition-all duration-300 focus:w-64 sm:focus:w-80 focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 4a6 6 0 0 1 6 6c0 1.38-.438 2.663-1.17 3.71l4.25 4.25a1 1 0 0 1-1.42 1.42l-4.25-4.25A5.978 5.978 0 0 1 10 16a6 6 0 1 1 0-12zm-4 6a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content with Scrollable Sections -->
+    <main class="pt-20 pb-20">
+        <section id="appetizers" class="section min-h-screen p-4">
+            <h2 class="text-3xl font-bold mb-6 text-red-500">Appetizers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://www.giallozafferano.com/images/276-27601/Chinese-Spring-Rolls_1200x800.jpg" alt="Spring Rolls" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Spring Rolls</h3>
+                    <p class="text-gray-400 text-sm">Crispy rolls with fresh veggies.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+8.99</p>
+                </div>
+                <!-- Additional appetizer for consistency -->
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIMEpRkKGVKqEpL9XmAcVzJA4sh49BI0zTg&s" alt="Garlic Bread" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Garlic Bread</h3>
+                    <p class="text-gray-400 text-sm">Toasted bread with garlic butter.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+6.99</p>
+                </div>
+                <!-- Add more appetizers as needed -->
+            </div>
+        </section>
+
+        <section id="main-courses" class="section min-h-screen p-4">
+            <h2 class="text-3xl font-bold mb-6 text-red-500">Main Courses</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9iX670O6DIeeY3Dgv_MvIojmJIFozsJ4xiQ&s" alt="Grilled Salmon" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Grilled Salmon</h3>
+                    <p class="text-gray-400 text-sm">Fresh salmon with lemon butter.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+18.99</p>
+                </div>
+                <!-- Additional main course for consistency -->
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://www.simplyrecipes.com/thmb/P9H1SrWMXvlywbZ9-69aO0mD0JU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/simply-recipes-easy-steak-au-poivre-lead-1-7ea7ee649fb64401be483e698fc8bbd5.jpg" alt="Steak" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Steak</h3>
+                    <p class="text-gray-400 text-sm">Juicy steak with herbs.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+24.99</p>
+                </div>
+                <!-- Add more main courses as needed -->
+            </div>
+        </section>
+
+        <section id="desserts" class="section min-h-screen p-4">
+            <h2 class="text-3xl font-bold mb-6 text-red-500">Desserts</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu6mEn2S-XQ9jxSWuQutBdKpEjNrXx-GhvUw&s" alt="Chocolate Lava Cake" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Chocolate Lava Cake</h3>
+                    <p class="text-gray-400 text-sm">Warm cake with gooey center.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+7.99</p>
+                </div>
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://www.allrecipes.com/thmb/DHosjm3NundSDP1q6wWEEECYwr8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8419-easy-sour-cream-cheesecake-DDMFS-beauty-4x3-BG-2747-44b427d330aa41aa876269b1249698a0.jpg" alt="Cheesecake" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Cheesecake</h3>
+                    <p class="text-gray-400 text-sm">Creamy cake with berry topping.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+6.99</p>
+                </div>
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSecz5fQ8xwI932QYl4g8esCcccR7zkt2m-Ig&s" alt="Ice Cream" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Ice Cream</h3>
+                    <p class="text-gray-400 text-sm">Vanilla with chocolate drizzle.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+4.99</p>
+                </div>
+                <!-- Add more desserts as needed -->
+            </div>
+        </section>
+
+        <section id="drinks" class="section min-h-screen p-4">
+            <h2 class="text-3xl font-bold mb-6 text-red-500">Drinks</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAwvYdK484LDvQBNHpdmYmhFKLKNyWfwDew&s" alt="Mango Smoothie" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Mango Smoothie</h3>
+                    <p class="text-gray-400 text-sm">Fresh mango blended with yogurt.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+5.99</p>
+                </div>
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/713ff3f9-c3c9-4213-96d6-403fad1e94c2/Derivates/b90bd941-f600-4dd1-9d68-405ea6b52cc9.jpg" alt="Lemonade" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Lemonade</h3>
+                    <p class="text-gray-400 text-sm">Freshly squeezed lemons.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+3.99</p>
+                </div>
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqpEjWZM4UwJMAWrJkeSuyhnrWYfHvMdIKQ&s" alt="Coffee" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Coffee</h3>
+                    <p class="text-gray-400 text-sm">Rich brewed coffee.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+2.99</p>
+                </div>
+                <div class="menu-item bg-gray-700 rounded-lg shadow-md p-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rVdPDDEDNkCyNyd5RLWlpPEp2WEhT4a9mA&s" alt="Iced Tea" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-2">Iced Tea</h3>
+                    <p class="text-gray-400 text-sm">Chilled tea with a hint of mint.</p>
+                    <p class="text-lg font-bold text-red-400 mt-2"> £E 
+3.49</p>
+                </div>
+                <!-- Add more drinks as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Fixed Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-gray-800 p-2 shadow-md z-10">
+        <ul class="flex justify-around">
+            <li><a href="#appetizers" class="nav-link flex flex-col items-center" data-section="appetizers"><span>🍽️</span><span class="text-xs">Appetizers</span></a></li>
+            <li><a href="#main-courses" class="nav-link flex flex-col items-center" data-section="main-courses"><span>🍲</span><span class="text-xs">Main Courses</span></a></li>
+            <li><a href="#desserts" class="nav-link flex flex-col items-center" data-section="desserts"><span>🍰</span><span class="text-xs">Desserts</span></a></li>
+            <li><a href="#drinks" class="nav-link flex flex-col items-center" data-section="drinks"><span>🥤</span><span class="text-xs">Drinks</span></a></li>
+        </ul>
+    </nav>
+</div>
+    <script src="script.js"></script>
+    <script src="loader.js"></script>
+
+</body>
+</html>
